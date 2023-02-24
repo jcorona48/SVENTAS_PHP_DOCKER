@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  php: 
+    build: .
+    ports:
+      - "3000:80"
+    links: 
+      - mariadb2
+    volumes:
+      - ./src/:/var/www/html 
+  mariadb2:
+    image: mariadb:10.11.2
+    ports:
+      - "3306:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=17574886
