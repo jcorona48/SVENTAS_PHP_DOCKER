@@ -47,7 +47,6 @@ if (isset($_POST['action'])) {
     
                 $con = Conectar();
                 $result = mysqli_query($con, "insert into T_Producto values (". (1+(int)$lastID->ID_Producto) .", '".$_POST['Nombre']."', ".$_POST['Precio_Unitario'].")");
-    
             }
             else{
                 $ID_Producto = $_SESSION['ID_Producto_edit'];
