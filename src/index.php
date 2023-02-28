@@ -51,6 +51,9 @@ header('Location: ./login.php');
 			<li class="nav-item ">
 				<a class="nav-link active" aria-current="page" href="./index.php">HOME</a>
 			</li>
+            <li class="nav-item ">
+				<a class="nav-link text-white" aria-current="page" href="./Producto.php">Productos</a>
+			</li>
 			<li class="nav-item ">
 				<a class="nav-link text-white" aria-current="page" href="./nomina.php">Nomina</a>
 			</li>
